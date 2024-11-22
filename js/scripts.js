@@ -186,7 +186,7 @@ $(document).ready(function () {
         },
         data: {
             // Event title
-            title: "Ram and Antara's Wedding",
+            title: "Nandhitha and Vimal's Wedding",
 
             // Event start date
             start: new Date('Nov 27, 2017 10:00'),
@@ -209,29 +209,39 @@ $(document).ready(function () {
     $('#add-to-cal').html(myCalendar);
 
 
-    /********************** RSVP **********************/
-    $('#rsvp-form').on('submit', function (e) {
-        e.preventDefault();
-        var data = $(this).serialize(); // Serializes the form data
-    
-        $('#alert-wrapper').html(alert_markup('info', '<strong>Just a sec!</strong> We are saving your details.'));
-    
-        // Make the POST request to your Google Apps Script
-        $.post('https://script.google.com/macros/s/AKfycbzcyNLS-jWq-LRE2LBur1hxPsecWyAsHnZAZ770v_6NvgoHMnPvx0Lm3olqr7bgxz9z/exec', data)
-            .done(function (data) {
-                console.log(data);
-                if (data.result === "error") {
-                    $('#alert-wrapper').html(alert_markup('danger', data.message));
-                } else {
-                    $('#alert-wrapper').html('');
-                    $('#rsvp-modal').modal('show');
-                }
-            })
-            .fail(function (data) {
-                console.log(data);
-                $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> There is some issue with the server.'));
-            });
-    });    
+/********************** RSVP **********************/
+$('#rsvp-form').on('submit', function (e) {
+    e.preventDefault(); // Prevents the default form submission
+    var data = $(this).serialize(); // Serializes the form data to send via POST
+
+    // Show loading message before form submission is processed
+    $('#alert-wrapper').html(alert_markup('info', '<strong>Just a sec!</strong> We are saving your details.'));
+
+    // Make the POST request to the Google Apps Script endpoint
+    $.post('https://script.google.com/macros/s/AKfycbytw-IeMWZalDFMJhQJ_tU7_dnrpHBtDnP7T9W76wuFB2Xf5U_RgPCyLAR-MpxvZIJ4/exec', data)
+        .done(function (data) {
+            console.log(data); // Log the response from the server
+            if (data.result === "error") {
+                // If there was an error, show the error message
+                $('#alert-wrapper').html(alert_markup('danger', data.message));
+            } else {
+                // If the RSVP was successful, clear the alerts and show the modal
+                $('#alert-wrapper').html('');
+                $('#rsvp-modal').modal('show');
+            }
+        })
+        .fail(function (data) {
+            console.log(data); // Log the error in case the request fails
+            // Show a failure message if the request fails
+            $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> There is some issue with the server.'));
+        });
+});
+
+// Function to create alert messages
+function alert_markup(type, message) {
+    return `<div class="alert alert-${type}" role="alert">${message}</div>`;
+}
+
 
 /********************** Extras **********************/
 

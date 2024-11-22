@@ -496,49 +496,42 @@
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
                 <h3>What are you waiting for?</h3>
-                <p>We would greatly appreciate if you could RSVP before December 1st for the Reception and May 1st for the other events</p>
-                <form id="rsvp-form" class="rsvp-form"
-                      action=""
-                      method="POST">
+                <p>We would greatly appreciate it if you could RSVP before December 1st for the Reception and May 1st for the other events</p>
+                <form id="rsvp-form" class="rsvp-form" action="" method="POST">
                     <div class="row">
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
-                                <i class="fa fa-envelope"></i><input type="email" name="email" class=""
-                                                                     placeholder="Your email"
-                                                                     required>
+                                <i class="fa fa-envelope"></i>
+                                <input type="email" name="email" class="" placeholder="Your email" required>
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
-                                <i class="fa fa-user"></i><input name="name" class=""
-                                                                 placeholder="Your name"
-                                                                 required>
+                                <i class="fa fa-user"></i>
+                                <input type="text" name="name" class="" placeholder="Your name" required>
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
-                                <i class="fa fa-users"></i><input type="number" name="extras" class="" min="0"
-                                                                  max="10"
-                                                                  placeholder="Husband/Wife or kids"
-                                                                  required>
+                                <i class="fa fa-users"></i>
+                                <input type="number" name="extras" class="" min="0" max="10" placeholder="Husband/Wife or kids" required>
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-12" id="alert-wrapper"></div>
                     </div>
-                    <button class="btn-fill rsvp-btn">
-                        Yes,
-                        that's me!
+                    <!-- Add type="submit" to the button -->
+                    <button type="submit" class="btn-fill rsvp-btn">
+                        Yes, that's me!
                     </button>
                 </form>
             </div>
         </div>
     </div>
-</section>
-
+    
 <footer>
     <div class="container">
         <div class="row">
