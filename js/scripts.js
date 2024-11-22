@@ -239,7 +239,7 @@ $('#rsvp-form').on('submit', function (e) {
 
 // Function to create alert messages
 function alert_markup(type, message) {
-    return `<div class="alert alert-${type}" role="alert">${message}</div>`;
+    return '<div class="alert alert-${type}" role="alert">${message}</div>';
 }
 
 
