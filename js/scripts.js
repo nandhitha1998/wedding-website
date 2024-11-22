@@ -246,19 +246,42 @@ function alert_markup(type, message) {
 /********************** Extras **********************/
 
 // Google map
+
 function initMap() {
-    var location = {lat: 43.73963168877229, lng:-79.27397057455373};
+    var location = { lat: 43.7485, lng: -79.2476 }; // Update with correct latitude and longitude
     var map = new google.maps.Map(document.getElementById('map-canvas'), {
         zoom: 15,
-        center: location,
-        scrollwheel: false
+        center: location
     });
-
+    
     var marker = new google.maps.Marker({
         position: location,
-        map: map
+        map: map,
+        title: 'St. Thomas Syro-Malabar Catholic Forane Church'
+    });
+
+    var infowindow = new google.maps.InfoWindow({
+        content: "<h5>St. Thomas Syro-Malabar Catholic Forane Church</h5><p>115 Ionview Road, Scarborough, ON M1K 3A1, Canada</p>"
+    });
+
+    marker.addListener('click', function() {
+        infowindow.open(map, marker);
     });
 }
+
+// function initMap() {
+//     var location = {lat: 43.73963168877229, lng:-79.27397057455373};
+//     var map = new google.maps.Map(document.getElementById('map-canvas'), {
+//         zoom: 15,
+//         center: location,
+//         scrollwheel: false
+//     });
+
+//     var marker = new google.maps.Marker({
+//         position: location,
+//         map: map
+//     });
+// }
 
 function initBBSRMap() {
     var la_fiesta = {lat: 20.305826, lng: 85.85480189999998};
