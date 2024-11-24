@@ -550,11 +550,27 @@
 <script src="js/jquery.mb.YTPlayer.min.js"></script>
 <script src="js/vendor/ouical.js"></script>
 <script src="js/scripts.min.js"></script>
+<script>
+function initMap() {
+    var location = {lat: 43.739678197555065, lng:-79.27399203217077};
+    var map = new google.maps.Map(document.getElementById('map-canvas'), {
+        zoom: 15,
+        center: location,
+        scrollwheel: false
+    });
+
+    var marker = new google.maps.Marker({
+        position: location,
+        map: map
+    });
+}
+</script>
 <script 
 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBLwR0oYYkMb78ik2tX1Ru1l1FsoazsgwA&loading=async&callback=initMap" 
 loading="async" 
 defer>
 </script>
+
 <!-- Google Analytics -->
 <script>
     (function (i, s, o, g, r, a, m) {
