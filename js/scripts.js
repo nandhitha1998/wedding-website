@@ -186,7 +186,7 @@ $(document).ready(function () {
         },
         data: {
             // Event title
-            title: "Nandhitha and Vimal's Wedding",
+            title: "Nandhitha and Vimal's Engagement",
 
             // Event start date
             start: new Date('Jan 4, 2025 11:30'),
