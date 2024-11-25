@@ -258,10 +258,6 @@
     }
 
     #eng-pics .img-wrap i {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 200px; /* Ensure the height is defined */
         font-size: 25px;
         position: absolute;
         width: 25px;
