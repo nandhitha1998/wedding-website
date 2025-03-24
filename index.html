@@ -76,12 +76,15 @@
                             <li><a href="#intro">How we met</a></li>
                             <li><a href="#events">Events</a></li>
                             <li><a href="#eng-pics">Picture Gallery</a></li>
+                            <!-- <li><a href="#" class="event-nav" data-event="engagement">Engagement</a></li>
+                            <li><a href="#" class="event-nav" data-event="wedding">Wedding</a></li>
+                            <li><a href="#" class="event-nav" data-event="reception">Reception</a></li> -->
                             <!-- <li><a href="#engagement">Engagement</a></li>
                             <li><a href="#wedding">Wedding</a></li>
                             <li><a href="#reception">Reception</a></li> -->
                         </ul>
                         <ul class="member-actions">
-                            <li><a href="#map" class="login">Venue</a></li>
+                            <!-- <li><a href="#map" class="login">Venue</a></li> -->
                             <li><a href="#rsvp" class="btn-white btn-small">RSVP</a></li>
                         </ul>
                     </nav>
@@ -165,9 +168,9 @@
         <div class="row">
             
                 <div class="wp3">
-                    <p><strong>January 4th</strong></p>
+                    <p><strong>January 4th - Toronto</strong></p>
 
-                    <h5>Betrothal <span class="time">11 AM to 5 PM</span></h5>
+                    <h5>Betrothal - St. Thomas Church <span class="time">11 AM to 5 PM</span></h5>
                     <p>We are  excited to celebrate our betrothal on January 4th, 2025, at St. Thomas Church in Scarborough. 
                         This special day will be filled with love, tradition, and celebration marking our commitment to one another 
                         in front of our closest family and friends. There will be dance, music, good vibes and good people around, and we can't 
@@ -176,9 +179,10 @@
                 
             
                 <div class="wp5">
-                    <p><strong>May 29th</strong></p>
+                    <p><strong>May 29th - Piravom</strong></p>
 
-                    <h5>Wedding <span class="time">7PM - 12AM</span></h5>
+                    <h5>Wedding - Little Flower Church <span class="time">4 PM - 5:30 PM</span></h5>
+                    <h5>Reception - Holy Kings Parish Hall <span class="time">7 PM - 10 PM</span></h5>
                     <p>On May 29th, 2025, at Little Flower Church in Piravom, I will finally marry Nandhitha, the destination of our beautiful 
                         journey together. This day marks the start of our lifelong commitment, surrounded by the love of family and friends 
                         in the place that feels closest to our hearts. The ceremony will include traditional vows, blessings, rings, and 
@@ -189,9 +193,9 @@
             
             
                 <div class="wp4">
-                    <p><strong>June 1</strong></p>
+                    <p><strong>June 1 - Chennai</strong></p>
 
-                    <h5>Reception <span class="time">10AM-11AM</span></h5>
+                    <h5>Reception - Mohana Mahal <span class="time">10 AM - 11 AM</span></h5>
                     <p>Join us for our wedding reception on June 1, 2025, at Mohana Mahal in Chennai. With cherished memories from her 
                         school and college days, Chennai is where Nandhitha formed some of her closest friendships and created countless 
                         unforgettable moments. This evening is especially for her family, friends, and loved ones, who have been such an 
@@ -390,8 +394,17 @@
     </div>
 </section>
 
+<section class="event-selector section-padding text-center">
+    <h3>Select an Event to View Details</h3>
+    <div class="btn-group">
+        <button class="btn btn-accent event-toggle" data-event="engagement">Engagement</button>
+        <button class="btn btn-accent event-toggle" data-event="wedding">Wedding</button>
+        <button class="btn btn-accent event-toggle" data-event="wedding-reception">Wedding Reception</button>
+        <button class="btn btn-accent event-toggle" data-event="reception">Reception</button>
+    </div>
+</section>
 
-<section id="video-bg-toronto" class="hidden-sm hidden-xs">
+<section id="video-bg-toronto" class="hidden-sm hidden-xs event-section engagement-section">
     <div id="bgndVideo1" class="player"
          data-property="{videoURL:'https://www.youtube.com/watch?v=NS1_JEPJjHA',containment:'#video-bg-toronto',autoPlay:true, mute:true, showControls:false, startAt:80, stopAt:259, opacity:1}">
     </div>
@@ -399,8 +412,8 @@
         <h5>Toronto</h5>
     </div>
 </section>
-<!-- 
-<section id="video-bg-piravom" class="hidden-sm hidden-xs">
+
+<section id="video-bg-piravom" class="hidden-sm hidden-xs event-section wedding-section">
     <div id="bgndVideo2" class="player"
          data-property="{videoURL:'https://youtu.be/csasHEyQXp8?si=FyYxm2Oph8lldcW9',containment:'#video-bg-piravom',autoPlay:true, mute:true, showControls:false, startAt:80, stopAt:259, opacity:1}">
     </div>
@@ -408,7 +421,7 @@
         <h5>Piravom</h5>
     </div>
 </section>
-<section id="video-bg-chennai" class="hidden-sm hidden-xs">
+<section id="video-bg-chennai" class="hidden-sm hidden-xs event-section reception-section">
     <div id="bgndVideo3" class="player"
          data-property="{videoURL:'https://youtu.be/gCouE441TW4?si=aD9phHTWw6kE_5zS',containment:'#video-bg-chennai',autoPlay:true, mute:true, showControls:false, startAt:80, stopAt:259, opacity:1}">
     </div>
@@ -416,14 +429,14 @@
         <h5>Chennai</h5>
         <p></p>
     </div>
-</section> -->
+</section>
 
-<section id="map" class="section-padding">
+<section id="map1" class="section-padding event-section engagement-section">
     <div class="text-center">
         <h3>How do I get there?</h3>
         <p>It's way easier than you think!</p>
     </div>
-    <div id="map-canvas">
+    <div id="map-canvas1">
     </div>
     <div id="map-content-wrapper" class="container pointer-events-none">
         <div class="row">
@@ -462,7 +475,134 @@
     </div>
 </section>
 
-<section class="rsvp text-center" id="rsvp">
+
+<section id="map2" class="section-padding event-section wedding-section">
+    <div class="text-center">
+        <h3>How do I get there?</h3>
+        <p>It's way easier than you think!<br>The Wedding will be solemnised at Little Flower Church, followed by reception at Holy Kings Parish Hall.</p>
+    </div>
+    <div id="map-canvas2">
+    </div>
+    <div id="map-content-wrapper" class="container pointer-events-none">
+        <div class="row">
+            <div class="col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-6">
+                <div class="text-center">
+                    <div id="btn-show-content" class="toggle-map-content pointer-events-auto">
+                        <i class="fa fa-info-circle"></i>&nbsp;&nbsp; Show info
+                    </div>
+                </div>
+                <div id="map-content" class="pointer-events-auto">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h5>Little Flower Church, Piravom</h5>
+                            <p>Hospital Jn, SH42, Piravom, Kerala 686664, India</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h5>Chacko A.V</h5>
+                            <p><i class="fa fa-mobile"></i> <a href="tel://+919495466963">+91 9495466963</a><br>
+                               <i class="fa fa-mobile"></i> <a href="tel://+919447505174">+91 9447505174</a></p>
+                        </div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col-md-6" style="padding: 5px;">
+                            <a class="btn btn-fill btn-small"
+                               href="https://m.uber.com/ul/?action=setPickup&client_id=fo1gCxPo8_6kL3kRMQM7nUSI6TsGYzTk&pickup=my_location&dropoff[formatted_address]=St%20Thomas%20Syro%20Malabar%20Mission%2C%20115%20Ionview%20Rd%2C%20Toronto%2C%20ON%20M1K%203A1&dropoff[latitude]=43.739678197555065&dropoff[longitude]=-79.27399203217077"><i
+                                    class="fa fa-taxi"></i>&nbsp;&nbsp;Book Uber</a>
+                        </div>
+                        <div class="col-md-6" style="padding: 5px;">
+                            <a class="btn btn-accent btn-small" id="btn-show-map"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Show
+                                map</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="map-canvas2_2">
+    </div>
+    <div id="map-content-wrapper" class="container pointer-events-none">
+        <div class="row">
+            <div class="col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-6">
+                <div class="text-center">
+                    <div id="btn-show-content" class="toggle-map-content pointer-events-auto">
+                        <i class="fa fa-info-circle"></i>&nbsp;&nbsp; Show info
+                    </div>
+                </div>
+                <div id="map-content" class="pointer-events-auto">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h5>Holy Kings Parish Hall, Piravom</h5>
+                            <p>Pallikavala, Piravom, Kerala 686664, India</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h5>Chacko A.V</h5>
+                            <p><i class="fa fa-mobile"></i> <a href="tel://+919495466963">+91 9495466963</a><br>
+                               <i class="fa fa-mobile"></i> <a href="tel://+919447505174">+91 9447505174</a></p>
+                        </div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col-md-6" style="padding: 5px;">
+                            <a class="btn btn-fill btn-small"
+                               href="https://m.uber.com/ul/?action=setPickup&client_id=fo1gCxPo8_6kL3kRMQM7nUSI6TsGYzTk&pickup=my_location&dropoff[formatted_address]=St%20Thomas%20Syro%20Malabar%20Mission%2C%20115%20Ionview%20Rd%2C%20Toronto%2C%20ON%20M1K%203A1&dropoff[latitude]=43.739678197555065&dropoff[longitude]=-79.27399203217077"><i
+                                    class="fa fa-taxi"></i>&nbsp;&nbsp;Book Uber</a>
+                        </div>
+                        <div class="col-md-6" style="padding: 5px;">
+                            <a class="btn btn-accent btn-small" id="btn-show-map"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Show
+                                map</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="map3" class="section-padding event-section">
+    <div class="text-center">
+        <h3>How do I get there?</h3>
+        <p>It's way easier than you think!</p>
+    </div>
+    <div id="map-canvas3">
+    </div>
+    <div id="map-content-wrapper" class="container pointer-events-none">
+        <div class="row">
+            <div class="col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-6">
+                <div class="text-center">
+                    <div id="btn-show-content" class="toggle-map-content pointer-events-auto">
+                        <i class="fa fa-info-circle"></i>&nbsp;&nbsp; Show info
+                    </div>
+                </div>
+                <div id="map-content" class="pointer-events-auto">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h5>St. Thomas Syro-Malabar Catholic Forane Church</h5>
+                            <p>115 Ionview Road, Scarborough, ON M1K 3A1, Canada</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h5>Roy David</h5>
+                            <p><i class="fa fa-mobile"></i> <a href="tel://+12268990083">+1 226-899-0083</a><br>
+                               <i class="fa fa-mobile"></i> <a href="tel://+14379728785">+1 437-972-8785</a></p>
+                        </div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col-md-6" style="padding: 5px;">
+                            <a class="btn btn-fill btn-small"
+                               href="https://m.uber.com/ul/?action=setPickup&client_id=fo1gCxPo8_6kL3kRMQM7nUSI6TsGYzTk&pickup=my_location&dropoff[formatted_address]=St%20Thomas%20Syro%20Malabar%20Mission%2C%20115%20Ionview%20Rd%2C%20Toronto%2C%20ON%20M1K%203A1&dropoff[latitude]=43.739678197555065&dropoff[longitude]=-79.27399203217077"><i
+                                    class="fa fa-taxi"></i>&nbsp;&nbsp;Book Uber</a>
+                        </div>
+                        <div class="col-md-6" style="padding: 5px;">
+                            <a class="btn btn-accent btn-small" id="btn-show-map"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Show
+                                map</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="rsvp text-center event-section" id="rsvp">
 
     <div id="rsvp-modal" class="modal fade" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
@@ -484,8 +624,21 @@
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
                 <h3>What are you waiting for?</h3>
-                <p>We would greatly appreciate it if you could RSVP before December 1st for the Reception and May 1st for the other events</p>
+                <p>We would greatly appreciate it if you could RSVP before May 1st</p>
                 <form id="rsvp-form" class="rsvp-form" action="" method="POST">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <div class="form-input-group">
+                                <i class="fa fa-calendar"></i>
+                                <select name="event" id="event-select" required>
+                                    <option value="">Select Event</option>
+                                    <!-- <option value="Engagement">Engagement (Jan 4, Toronto)</option> -->
+                                    <option value="Wedding">Wedding and Reception - May 29 - Piravom</option>
+                                    <option value="Reception">Reception - June 1 - Chennai</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
                     <div class="row">
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
@@ -525,7 +678,8 @@
             </div>
         </div>
     </div>
-    
+</section>
+
 <footer>
     <div class="container">
         <div class="row">
@@ -547,7 +701,19 @@
 <script>
 function initMap() {
     var location = {lat: 43.739678197555065, lng:-79.27399203217077};
-    var map = new google.maps.Map(document.getElementById('map-canvas'), {
+    var map = new google.maps.Map(document.getElementById('map-canvas1'), {
+        zoom: 15,
+        center: location,
+        scrollwheel: false
+    });
+    var location = {lat: 43.739678197555065, lng:-79.27399203217077};
+    var map = new google.maps.Map(document.getElementById('map-canvas2'), {
+        zoom: 15,
+        center: location,
+        scrollwheel: false
+    });
+    var location = {lat: 43.739678197555065, lng:-79.27399203217077};
+    var map = new google.maps.Map(document.getElementById('map-canvas3'), {
         zoom: 15,
         center: location,
         scrollwheel: false
