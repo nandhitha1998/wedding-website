@@ -194,35 +194,44 @@ $(document).ready(function () {
     });
 
     /********************** Add to Calendar **********************/
-    var myCalendar = createCalendar({
-        options: {
-            class: '',
-            // You can pass an ID. If you don't, one will be generated for you
-            id: ''
-        },
-        data: {
-            // Event title
-            title: "Nandhitha and Vimal's Engagement",
-
-            // Event start date
-            start: new Date('Jan 4, 2025 11:30'),
-
-            // Event duration (IN MINUTES)
-            // duration: 120,
-
-            // You can also choose to set an end time
-            // If an end time is set, this will take precedence over duration
-            end: new Date('Jan 4, 2025 14:00'),
-
-            // Event Address
-            address: 'St. Thomas Syro-Malabar Catholic Forane Church, 115 Ionview Road, Scarborough, ON M1K 3A1, Canada',
-
-            // Event Description
-            description: "We can't wait to see you on our big day. For any queries or issues, please contact Roy David at +1 226-899-0083."
+    function updateCalendarEvent() {
+        var eventSelect = document.getElementById('event-select').value;
+        var calendarData = {};
+    
+        if (eventSelect === "Wedding") {
+            calendarData = {
+                title: "Nandhitha and Vimal's Wedding & Reception",
+                start: new Date('May 29, 2025 16:00'),
+                end: new Date('May 29, 2025 21:00'),
+                address: 'Little Flower Church, Piravom, Kerala, India',
+                description: "Join us for the Wedding at Little Flower Church, followed by the reception at Holy Kings Parish Hall."
+            };
+        } else if (eventSelect === "Reception") {
+            calendarData = {
+                title: "Nandhitha and Vimal's Reception",
+                start: new Date('June 1, 2025 18:00'),
+                end: new Date('June 1, 2025 22:00'),
+                address: 'Chennai, Tamil Nadu, India',
+                description: "Celebrate with us at our reception in Chennai. Looking forward to seeing you!"
+            };
+        } else {
+            // Clear calendar section if no event is selected
+            document.getElementById('add-to-cal').innerHTML = "";
+            return;
         }
-    });
-
-    $('#add-to-cal').html(myCalendar);
+    
+        // Create the new calendar event
+        var myCalendar = createCalendar({
+            options: {
+                class: '',
+                id: ''
+            },
+            data: calendarData
+        });
+    
+        // Update the calendar in the modal
+        document.getElementById('add-to-cal').innerHTML = myCalendar;
+    }
 
 
 /********************** RSVP **********************/
