@@ -238,6 +238,8 @@ $(document).ready(function () {
         calendarContainer.innerHTML = ""; 
         calendarContainer.appendChild(myCalendar);
     }
+    
+    updateCalendarEvent();
 
 
 /********************** RSVP **********************/
