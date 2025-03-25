@@ -234,7 +234,9 @@ $(document).ready(function () {
         });
     
         // Update the calendar in the modal
-        document.getElementById('add-to-cal').innerHTML = myCalendar;
+        let calendarContainer = document.getElementById('add-to-cal');
+        calendarContainer.innerHTML = ""; 
+        calendarContainer.appendChild(myCalendar);
     }
 
 
