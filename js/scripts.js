@@ -203,7 +203,7 @@ $('#rsvp-form').on('submit', function (e) {
     $('#alert-wrapper').html(alert_markup('info', '<strong>Just a sec!</strong> We are saving your details.'));
 
     // Make the POST request to the Google Apps Script endpoint
-    $.post('https://script.google.com/macros/s/AKfycbytw-IeMWZalDFMJhQJ_tU7_dnrpHBtDnP7T9W76wuFB2Xf5U_RgPCyLAR-MpxvZIJ4/exec', data)
+    $.post('https://script.google.com/macros/s/AKfycbzPmG3tjvAsHGowLQRojFBBrEn1akMa-r-OnMnlaaDAdNJI6YUUEHSq9toYA4nNKnI7/exec', data)
         .done(function (data) {
             console.log(data); // Log the response from the server
             if (data.result === "error") {
