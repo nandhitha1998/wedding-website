@@ -16,3 +16,6 @@
 .btn-move-down {
     margin-top: 10px; /* Adjust the value as needed */
 }
+#map-content1{margin-top:40px;padding:50px 60px;background:#fff;-webkit-transition:opacity .5s,visibility .6s,margin-top .5s;transition:opacity .5s,visibility .6s,margin-top .5s}#btn-show-content1{padding:20px;background:#fff;cursor:pointer;display:inline-block;-webkit-transition:opacity .5s,visibility .6s,margin-top .5s;transition:opacity .5s,visibility .6s,margin-top .5s}
+#map-content2{margin-top:40px;padding:50px 60px;background:#fff;-webkit-transition:opacity .5s,visibility .6s,margin-top .5s;transition:opacity .5s,visibility .6s,margin-top .5s}#btn-show-content2{padding:20px;background:#fff;cursor:pointer;display:inline-block;-webkit-transition:opacity .5s,visibility .6s,margin-top .5s;transition:opacity .5s,visibility .6s,margin-top .5s}
+#map-content3{margin-top:40px;padding:50px 60px;background:#fff;-webkit-transition:opacity .5s,visibility .6s,margin-top .5s;transition:opacity .5s,visibility .6s,margin-top .5s}#btn-show-content3{padding:20px;background:#fff;cursor:pointer;display:inline-block;-webkit-transition:opacity .5s,visibility .6s,margin-top .5s;transition:opacity .5s,visibility .6s,margin-top .5s}

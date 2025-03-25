@@ -772,14 +772,44 @@ Google map
   margin-top: -502px;
   margin-bottom: 150px;
 }
-#map-content {
+#map-content1 {
   margin-top: 40px;
   padding: 50px 60px;
   background: #fff;
   -webkit-transition: opacity 0.5s, visibility 0.6s, margin-top 0.5s;
   transition: opacity 0.5s, visibility 0.6s, margin-top 0.5s;
 }
-#btn-show-content {
+#btn-show-content1 {
+  padding: 20px;
+  background: #fff;
+  cursor: pointer;
+  display: inline-block;
+  -webkit-transition: opacity 0.5s, visibility 0.6s, margin-top 0.5s;
+  transition: opacity 0.5s, visibility 0.6s, margin-top 0.5s;
+}
+#map-content2 {
+  margin-top: 40px;
+  padding: 50px 60px;
+  background: #fff;
+  -webkit-transition: opacity 0.5s, visibility 0.6s, margin-top 0.5s;
+  transition: opacity 0.5s, visibility 0.6s, margin-top 0.5s;
+}
+#btn-show-content2 {
+  padding: 20px;
+  background: #fff;
+  cursor: pointer;
+  display: inline-block;
+  -webkit-transition: opacity 0.5s, visibility 0.6s, margin-top 0.5s;
+  transition: opacity 0.5s, visibility 0.6s, margin-top 0.5s;
+}
+#map-content3 {
+  margin-top: 40px;
+  padding: 50px 60px;
+  background: #fff;
+  -webkit-transition: opacity 0.5s, visibility 0.6s, margin-top 0.5s;
+  transition: opacity 0.5s, visibility 0.6s, margin-top 0.5s;
+}
+#btn-show-content3 {
   padding: 20px;
   background: #fff;
   cursor: pointer;
@@ -836,7 +866,7 @@ RSVP form
         left: 30px;
         transform: translateY(-50%);
       }
-      i.fa-user, i.fa-users, i.fa-question-circle, i.fa-envelope, i.fa-calendar .fa-key {
+      i.fa-user, i.fa-users, i.fa-question-circle, i.fa-envelope, i.fa-calendar, .fa-key {
         font-size: 14px;
         position: absolute;
         top: 50%;

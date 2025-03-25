@@ -168,13 +168,29 @@ $(document).ready(function () {
 
 
     /********************** Toggle Map Content **********************/
-    $('#btn-show-map').click(function () {
-        $('#map-content').toggleClass('toggle-map-content');
-        $('#btn-show-content').toggleClass('toggle-map-content');
+    $('#btn-show-map1').click(function () {
+        $('#map-content1').toggleClass('toggle-map-content');
+        $('#btn-show-content1').toggleClass('toggle-map-content');
     });
-    $('#btn-show-content').click(function () {
-        $('#map-content').toggleClass('toggle-map-content');
-        $('#btn-show-content').toggleClass('toggle-map-content');
+    $('#btn-show-content1').click(function () {
+        $('#map-content1').toggleClass('toggle-map-content');
+        $('#btn-show-content1').toggleClass('toggle-map-content');
+    });
+    $('#btn-show-map2').click(function () {
+        $('#map-content2').toggleClass('toggle-map-content');
+        $('#btn-show-content2').toggleClass('toggle-map-content');
+    });
+    $('#btn-show-content2').click(function () {
+        $('#map-content2').toggleClass('toggle-map-content');
+        $('#btn-show-content2').toggleClass('toggle-map-content');
+    });
+    $('#btn-show-map3').click(function () {
+        $('#map-content3').toggleClass('toggle-map-content');
+        $('#btn-show-content3').toggleClass('toggle-map-content');
+    });
+    $('#btn-show-content3').click(function () {
+        $('#map-content3').toggleClass('toggle-map-content');
+        $('#btn-show-content3').toggleClass('toggle-map-content');
     });
 
     /********************** Add to Calendar **********************/
