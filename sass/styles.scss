@@ -275,6 +275,7 @@ Hero
     margin-bottom: 40px;
   }
   p.intro {
+    text-align: justify;
     color: $txt-light;
     font-size: 20px;
     font-weight: 300;
@@ -555,6 +556,7 @@ Features-stack
 .events
 ========================================================================== */
 .events {
+  text-align: justify;
   .leftcol {
     padding-right: 100px;
     border-right: solid 1px $keyline-color;
@@ -755,22 +757,17 @@ Embed video
 /* ==========================================================================
 Google map
 ========================================================================== */
-#map-canvas1 {
-  height: 500px;
-  width: 100%;
-}
-#map-canvas2 {
-  height: 500px;
-  width: 100%;
-}
-#map-canvas3 {
-  height: 500px;
-  width: 100%;
-}
-#map-content-wrapper {
-  position: relative;
-  margin-top: -502px;
-  margin-bottom: 150px;
+#map-canvas1{height:500px;width:100%}
+#map-canvas2{height:500px;width:100%}
+#map-canvas3{height:500px;width:100%}
+#map-content-wrapper{position:relative;margin-top:-502px;margin-bottom:150px}
+#map-content-wrapper2{position:relative;margin-top:-502px;margin-bottom:150px}
+@media (max-width: 767px) {
+    #map-canvas1{height:650px;width:100%}
+    #map-canvas2{height:800px;width:100%}
+    #map-canvas3{height:650px;width:100%}
+    #map-content-wrapper{position:relative;margin-top:-660px;margin-bottom:150px}
+    #map-content-wrapper2{position:relative;margin-top:-830px;margin-bottom:150px}
 }
 #map-content1 {
   margin-top: 40px;
@@ -960,6 +957,7 @@ body.modal-open {
 }
 .modal-body {
   padding:25px;
+  text-align: justify;
 }
 
 .event-section.show {
