@@ -26,8 +26,8 @@
 #map-content-wrapper2{position:relative;margin-top:-502px;margin-bottom:150px}
 @media (max-width: 767px) {
     #map-canvas1{height:650px;width:100%}
-    #map-canvas2{height:800px;width:100%}
+    #map-canvas2{height:850px;width:100%}
     #map-canvas3{height:650px;width:100%}
     #map-content-wrapper{position:relative;margin-top:-660px;margin-bottom:150px}
-    #map-content-wrapper2{position:relative;margin-top:-830px;margin-bottom:150px}
+    #map-content-wrapper2{position:relative;margin-top:-880px;margin-bottom:150px}
 }
